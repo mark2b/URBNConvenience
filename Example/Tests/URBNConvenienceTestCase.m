@@ -28,6 +28,45 @@
     [super tearDown];
 }
 
+- (void)testHumanReadableStringsPastDates {
+    NSString *string;
+    NSDate *currentDate = [NSDate date];
+    NSCalendar *calendar = [NSCalendar calendarWithIdentifier:NSGregorianCalendar];
+    
+    NSDate *oneMinuteAgo = [calendar dateByAddingUnit:NSCalendarUnitMinute value:-1 toDate:currentDate options:0];
+    string = [oneMinuteAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"1m"], @"'minute' test failed");
+    
+    NSDate *fiftyNineMinuetsAgo = [calendar dateByAddingUnit:NSCalendarUnitMinute value:-59 toDate:currentDate options:0];
+    string = [fiftyNineMinuetsAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"59m"], @"'minute' test failed");
+    
+    NSDate *oneHourAgo = [calendar dateByAddingUnit:NSCalendarUnitHour value:-1 toDate:currentDate options:0];
+    string = [oneHourAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"1h"], @"'hour' test failed");
+    
+    NSDate *twentyThreeHoursAgo = [calendar dateByAddingUnit:NSCalendarUnitHour value:-23 toDate:currentDate options:0];
+    string = [twentyThreeHoursAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"23h"], @"'hour' test failed");
+    
+    NSDate *oneDayAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-1 toDate:currentDate options:0];
+    string = [oneDayAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"1d"], @"'day' test failed");
+    
+    NSDate *sixDaysAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-6 toDate:currentDate options:0];
+    string = [sixDaysAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"6d"], @"'day' test failed");
+    
+    NSDate *oneWeekAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-7 toDate:currentDate options:0];
+    string = [oneWeekAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"1w"], @"'week' test failed");
+    
+    NSDate *twoWeeksAgo = [calendar dateByAddingUnit:NSCalendarUnitDay value:-14 toDate:currentDate options:0];
+    string = [twoWeeksAgo urbn_humanReadableStringForTimeSinceCurrentDate];
+    XCTAssertTrue([string isEqualToString:@"2w"], @"'week' test failed");
+    
+}
+
 - (void)testHumanReadableStrings {
     NSString *string;
     NSDate *currentDate = [NSDate date];
