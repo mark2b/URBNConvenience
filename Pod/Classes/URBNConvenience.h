@@ -12,6 +12,7 @@
 
 //Subclasses
 #import "URBNTextField.h"
+#import "URBNExtraTextHighlightedTextStorage.h"
 
 //Functions & Macros
 #import "URBNFunctions.h"

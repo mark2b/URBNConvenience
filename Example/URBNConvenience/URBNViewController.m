@@ -108,6 +108,20 @@
     [tf urbn_addConstraintForAttribute:NSLayoutAttributeCenterX withItem:self.view];
     [tf urbn_addWidthLayoutConstraingWithConstant:100.f];
     [tf urbn_showLoading:YES animated:YES spinnerInsets:UIEdgeInsetsMake(0.0, 0.0, 4.0, 4.0)];
+    
+    NSTextStorage *textStorage = [[URBNExtraTextHighlightedTextStorage alloc] initWithErrorTextColor:[UIColor redColor] maxLength:10];
+    NSLayoutManager *textLayout = [NSLayoutManager new];
+    [textStorage addLayoutManager:textLayout];
+    NSTextContainer *textContainer = [NSTextContainer new];
+    [textLayout addTextContainer:textContainer];
+    UITextView *textEntryView = [[UITextView alloc] initWithFrame:CGRectZero textContainer:textContainer];
+    textEntryView.backgroundColor = [UIColor lightGrayColor];
+    textEntryView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:textEntryView];
+    [textEntryView urbn_addWidthLayoutConstraingWithConstant:100.f];
+    [textEntryView urbn_addHeightLayoutConstraintWithConstant:100.f];
+    [textEntryView urbn_addConstraintForAttribute:NSLayoutAttributeCenterY withItem:self.view];
+    [textEntryView urbn_addConstraintForAttribute:NSLayoutAttributeRight withItem:self.view];
 }
 
 - (void)showBorders {
