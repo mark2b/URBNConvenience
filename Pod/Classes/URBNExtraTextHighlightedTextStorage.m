@@ -53,4 +53,16 @@
     [self endEditing];
 }
 
+- (void)processEditing {
+    if (self.errorTextColor) {
+        NSInteger stringLength = self.string.length;
+        [self removeAttribute:NSBackgroundColorAttributeName range:NSMakeRange(0, stringLength)];
+        
+        if (stringLength > self.maxLength) {
+            [self addAttribute:NSBackgroundColorAttributeName value:self.errorTextColor range:NSMakeRange(self.maxLength, stringLength - self.maxLength)];
+        }
+    }
+    [super processEditing];
+}
+
 @end
