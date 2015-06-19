@@ -109,12 +109,7 @@
     [tf urbn_addWidthLayoutConstraingWithConstant:100.f];
     [tf urbn_showLoading:YES animated:YES spinnerInsets:UIEdgeInsetsMake(0.0, 0.0, 4.0, 4.0)];
     
-    NSTextStorage *textStorage = [[URBNExtraTextHighlightedTextStorage alloc] initWithErrorTextColor:[UIColor redColor] maxLength:10];
-    NSLayoutManager *textLayout = [NSLayoutManager new];
-    [textStorage addLayoutManager:textLayout];
-    NSTextContainer *textContainer = [NSTextContainer new];
-    [textLayout addTextContainer:textContainer];
-    UITextView *textEntryView = [[UITextView alloc] initWithFrame:CGRectZero textContainer:textContainer];
+    UITextView *textEntryView = [[UITextView class] urbn_UITextViewWithErrorColor:[UIColor redColor] maxLength:10];
     textEntryView.backgroundColor = [UIColor lightGrayColor];
     textEntryView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:textEntryView];

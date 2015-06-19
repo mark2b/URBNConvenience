@@ -9,6 +9,7 @@
 #import "UIView+URBNAnimations.h"
 #import "UITextField+URBNLoadingIndicator.h"
 #import "NSString+URBN.h"
+#import "UITextView+URBNHighlightExtra.h"
 
 //Subclasses
 #import "URBNTextField.h"
