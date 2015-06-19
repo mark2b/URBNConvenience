@@ -10,7 +10,7 @@
 #import <URBNConvenience/NSDate+URBN.h>
 #import <URBNConvenience/NSString+URBN.h>
 #import <XCTest/XCTest.h>
-
+#import <URBNConvenience/URBNExtraTextHighlightedTextStorage.h>
 
 @interface URBNConvenienceTestCase : XCTestCase
 
@@ -71,6 +71,18 @@
     XCTAssertTrue([refString urbn_containsCaseInsensitiveString:@"this"], @"Case insensistive case failed for present string");
     
     XCTAssertFalse([refString urbn_containsCaseInsensitiveString:@"more stuff"], @"Case insensistive case failed for absent string");
+}
+
+- (void)testExtraTextHighlight {
+    NSInteger maxLength = 10;
+    URBNExtraTextHighlightedTextStorage *storage = [[URBNExtraTextHighlightedTextStorage alloc] initWithErrorTextColor:[UIColor redColor] maxLength:maxLength];
+    
+    [storage setAttributedString:[[NSAttributedString alloc]initWithString:@"0123456789abcd"]];
+    NSRange range;
+    NSDictionary *attributes = [storage attributesAtIndex:maxLength effectiveRange:&range];
+    XCTAssertTrue([attributes objectForKey:NSBackgroundColorAttributeName] == [UIColor redColor]);
+    XCTAssertTrue(range.length = 4);
+    XCTAssertTrue(range.location = maxLength);
 }
 
 @end
