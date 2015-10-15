@@ -24,7 +24,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		626BC9CCCF3A8601253309C5 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE647ADE0A19B236DBFA24 /* Pods_Tests.framework */; };
-		678E3466DAC955B67995F696 /* Pods_URBNConvenience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343676A2656BA9728B98325A /* Pods_URBNConvenience.framework */; };
+		93762DFC1FAEB66466F89600 /* Pods_URBNConvenience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343676A2656BA9728B98325A /* Pods_URBNConvenience.framework */; };
 		A0F058511A2E58C500D60C6E /* URBNConvenienceTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F058501A2E58C500D60C6E /* URBNConvenienceTestCase.m */; };
 		D8F856211AB73100008BE6C8 /* URBNBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F856201AB73100008BE6C8 /* URBNBorderViewController.m */; };
 /* End PBXBuildFile section */
@@ -46,14 +46,14 @@
 		27078A470D4B45F552AFFC4E /* Pods-URBNConvenience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNConvenience.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNConvenience/Pods-URBNConvenience.release.xcconfig"; sourceTree = "<group>"; };
 		343676A2656BA9728B98325A /* Pods_URBNConvenience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBNConvenience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5908BC4943E0F7351358F9AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* URBNConvenience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBNConvenience.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* ConvenienceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenienceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* URBNConvenience-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URBNConvenience-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* ConvenienceExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConvenienceExample-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* URBNConvenience-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URBNConvenience-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* ConvenienceExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConvenienceExample-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* URBNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URBNAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* URBNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URBNAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				678E3466DAC955B67995F696 /* Pods_URBNConvenience.framework in Frameworks */,
+				93762DFC1FAEB66466F89600 /* Pods_URBNConvenience.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +128,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* URBNConvenience.app */,
+				6003F58A195388D20070C39A /* ConvenienceExample.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -167,10 +167,10 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* URBNConvenience-Info.plist */,
+				6003F595195388D20070C39A /* ConvenienceExample-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* URBNConvenience-Prefix.pch */,
+				6003F59B195388D20070C39A /* ConvenienceExample-Prefix.pch */,
 				22FEE7821A6EF4A6005151B7 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
@@ -213,12 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "URBNConvenience" */;
 			buildPhases = (
-				182B3B40C22DC5DBAEED371B /* Check Pods Manifest.lock */,
+				65831456F6D0E9B8A9AF1286 /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				DDD59DEDCDCA536701E969FE /* Embed Pods Frameworks */,
-				E68E4AA25D8EE12BB08A6AA8 /* Copy Pods Resources */,
+				544AC47BAF28941C128D801E /* Embed Pods Frameworks */,
+				B63540466A8119EED5F881FE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,7 +226,7 @@
 			);
 			name = URBNConvenience;
 			productName = URBNConvenience;
-			productReference = 6003F58A195388D20070C39A /* URBNConvenience.app */;
+			productReference = 6003F58A195388D20070C39A /* ConvenienceExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* Tests */ = {
@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "URBNConvenience" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "ConvenienceExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -323,7 +323,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		182B3B40C22DC5DBAEED371B /* Check Pods Manifest.lock */ = {
+		544AC47BAF28941C128D801E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNConvenience/Pods-URBNConvenience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65831456F6D0E9B8A9AF1286 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,22 +383,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DDD59DEDCDCA536701E969FE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNConvenience/Pods-URBNConvenience-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E68E4AA25D8EE12BB08A6AA8 /* Copy Pods Resources */ = {
+		B63540466A8119EED5F881FE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,9 +546,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URBNConvenience/URBNConvenience-Prefix.pch";
-				INFOPLIST_FILE = "URBNConvenience/URBNConvenience-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "URBNConvenience/ConvenienceExample-Prefix.pch";
+				INFOPLIST_FILE = "URBNConvenience/ConvenienceExample-Info.plist";
+				PRODUCT_NAME = ConvenienceExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -560,9 +560,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URBNConvenience/URBNConvenience-Prefix.pch";
-				INFOPLIST_FILE = "URBNConvenience/URBNConvenience-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "URBNConvenience/ConvenienceExample-Prefix.pch";
+				INFOPLIST_FILE = "URBNConvenience/ConvenienceExample-Info.plist";
+				PRODUCT_NAME = ConvenienceExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -571,7 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE988799A090A92BA95D4B41 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/URBNConvenience.app/URBNConvenience";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -585,7 +585,7 @@
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConvenienceExample.app/ConvenienceExample";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -594,7 +594,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1214BEC95A0ABB0286555C9D /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/URBNConvenience.app/URBNConvenience";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -604,7 +604,7 @@
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConvenienceExample.app/ConvenienceExample";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -612,7 +612,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "URBNConvenience" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "ConvenienceExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
