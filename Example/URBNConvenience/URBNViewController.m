@@ -10,6 +10,7 @@
 #import "URBNViewController.h"
 #import "URBNBorderViewController.h"
 #import <URBNConvenience/UIView+URBNBorders.h>
+#import "Convenience-Swift.h"
 
 @interface URBNViewController ()
 @property(nonatomic, strong) UIImageView *imageView1;
@@ -58,7 +59,7 @@
             [self.view layoutIfNeeded];
         } completion:nil];
     });
-
+    
     //This code proves Github Issue #9 has been fixed. (https://github.com/urbn/URBNConvenience/issues/9)
     UILabel* errorLabel = [[UILabel alloc] init];
     errorLabel.text = @"There should be a red box here.";
@@ -83,8 +84,11 @@
     [redBox urbn_addWidthLayoutConstraingWithConstant:label.urbn_widthLayoutConstraint.constant];
 
     [redBox addSubview:label];
+    
     [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[label]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
     [redBox addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[label]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(label)]];
+    
+    
 
     [self.view addSubview:redBox];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[redBox]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(redBox)]];
