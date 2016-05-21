@@ -31,7 +31,7 @@ class DictionaryConvenienceTests: XCTestCase {
     func testMergeDiffDictionary() {
         var foo = ["Hi": 1234]
         let bar = ["There": 9876]
-        foo.mergeWithDictionary(bar)
+        foo.urbn_mergeWithDictionary(bar)
         XCTAssert(foo["There"] == 9876)
         XCTAssert(foo.keys.count == 2)
     }
@@ -39,7 +39,7 @@ class DictionaryConvenienceTests: XCTestCase {
     func testMergeSameDictionary() {
         var foo = ["Hello": 1234]
         let bar = ["Hello": 9876]
-        foo.mergeWithDictionary(bar)
+        foo.urbn_mergeWithDictionary(bar)
         XCTAssert(foo["Hello"] == 9876)
         XCTAssert(foo.keys.count == 1)
     }
