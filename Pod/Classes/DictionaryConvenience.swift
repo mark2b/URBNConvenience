@@ -13,3 +13,12 @@ public func += <Key, Value> (inout left: [Key: Value], right: [Key: Value]) {
         left[key] = value
     }
 }
+
+// Excerpt From: Chris Eidhof. “Advanced Swift.” iBooks.
+public extension Dictionary {
+    mutating func mergeWithDictionary<S: SequenceType where S.Generator.Element == (Key,Value)>(other: S) {
+        for (k, v) in other {
+            self[k] = v
+        }
+    }
+}

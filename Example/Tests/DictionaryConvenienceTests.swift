@@ -27,5 +27,12 @@ class DictionaryConvenienceTests: XCTestCase {
         XCTAssert(foo["Hello"] == 9876)
         XCTAssert(foo.keys.count == 1)
     }
+    
+    func testMergeDiffDictionary() {
+        var foo = ["Hi": 1234]
+        let bar = ["There": 9876]
+        foo.mergeWithDictionary(bar)
+        print(foo)
+    }
 
 }
