@@ -31,7 +31,7 @@ class DictionaryConvenienceTests: XCTestCase {
     func testMergeDiffDictionary() {
         var foo = ["Hi": 1234]
         let bar = ["There": 9876]
-        foo.urbn_mergeWithDictionary(bar)
+        foo.mergeWithDictionary(bar)
         XCTAssert(foo["There"] == 9876)
         XCTAssert(foo.keys.count == 2)
     }
@@ -41,7 +41,7 @@ class DictionaryConvenienceTests: XCTestCase {
         let test2 = TestClass(theStuff: "TestTwoStuff")
         var foo = ["Hello": test1]
         let bar = ["World": test2]
-        foo.urbn_mergeWithDictionary(bar)
+        foo.mergeWithDictionary(bar)
         
         if let foosWorld = foo["World"], barsWorld = bar["World"] {
             XCTAssertFalse(foosWorld === barsWorld)
@@ -50,7 +50,6 @@ class DictionaryConvenienceTests: XCTestCase {
             XCTFail("Failed to create copies, the references will be the same")
         }
     }
-
 }
 
 class TestClass: NSObject, NSCopying {

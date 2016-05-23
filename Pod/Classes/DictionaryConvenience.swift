@@ -18,9 +18,9 @@ public func += <Key, Value> (inout left: [Key: Value], right: [Key: Value]) {
 // Excerpt From: Chris Eidhof. “Advanced Swift.” iBooks.
 extension Dictionary {
     
-    public mutating func urbn_mergeWithDictionary<S: SequenceType where S.Generator.Element == (Key,Value)>(other: S) {
+    public mutating func mergeWithDictionary<S: SequenceType where S.Generator.Element == (Key,Value)>(other: S) {
         
-        for (key,value) in other {            
+        for (key,value) in other {
             if let keyCopyable = key as? NSCopying, keyCopy = keyCopyable.copyWithZone(nil) as? Key, valCopyable = value as? NSCopying, valueCopy = valCopyable.copyWithZone(nil) as? Value {
                 self.updateValue(valueCopy, forKey: keyCopy)
             }
