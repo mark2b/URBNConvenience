@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public func += <Key, Value> (inout left: [Key: Value], right: [Key: Value]) {
     for (key, value) in right {
@@ -15,10 +16,18 @@ public func += <Key, Value> (inout left: [Key: Value], right: [Key: Value]) {
 }
 
 // Excerpt From: Chris Eidhof. “Advanced Swift.” iBooks.
-public extension Dictionary {
+extension Dictionary {
+    
     public mutating func urbn_mergeWithDictionary<S: SequenceType where S.Generator.Element == (Key,Value)>(other: S) {
-        for (k, v) in other {
-            self[k] = v
+        
+        for (key,value) in other {            
+            if let keyCopyable = key as? NSCopying, keyCopy = keyCopyable.copyWithZone(nil) as? Key, valCopyable = value as? NSCopying, valueCopy = valCopyable.copyWithZone(nil) as? Value {
+                self.updateValue(valueCopy, forKey: keyCopy)
+            }
+            else {
+                self.updateValue(value, forKey:key)
+            }
         }
     }
 }
+
