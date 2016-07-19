@@ -8,4 +8,4 @@ before_install:
 - sudo gem install cocoapods -v '1.0'
 - cd Example && rm -rf Pods && pod install && cd -
 script:
-- xctool test -workspace Example/URBNConvenience.xcworkspace -scheme URBNConvenience -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool test -workspace Example/Convenience.xcworkspace -scheme URBNConvenience -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
