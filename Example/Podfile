@@ -1,9 +1,16 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+workspace 'Convenience'
 target 'Convenience' do
+project 'URBNConvenience.xcodeproj'
     pod "URBNConvenience", :path => "../"  
   target 'Tests' do
     inherit! :search_paths
   end
+end
+
+target 'ConvenienceTV' do
+project 'ConvenienceTV.xcodeproj'
+    pod "URBNConvenience", :path => "../"  
 end

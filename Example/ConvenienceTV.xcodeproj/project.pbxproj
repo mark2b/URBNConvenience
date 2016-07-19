@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C606BDAA4583C8CE89327A6 /* Pods_ConvenienceTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA358F75B713DEDA2D5A3376 /* Pods_ConvenienceTV.framework */; };
+		45A74BC11D3EB910000CBD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A74BC01D3EB910000CBD9D /* AppDelegate.swift */; };
+		45A74BC31D3EB910000CBD9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A74BC21D3EB910000CBD9D /* ViewController.swift */; };
+		45A74BC61D3EB910000CBD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A74BC41D3EB910000CBD9D /* Main.storyboard */; };
+		45A74BC81D3EB910000CBD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A74BC71D3EB910000CBD9D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45A74BBD1D3EB910000CBD9D /* ConvenienceTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenienceTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A74BC01D3EB910000CBD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45A74BC21D3EB910000CBD9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45A74BC51D3EB910000CBD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45A74BC71D3EB910000CBD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45A74BC91D3EB910000CBD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEC2A3E2B1C73A1944E5ADC /* Pods-ConvenienceTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenienceTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConvenienceTV/Pods-ConvenienceTV.debug.xcconfig"; sourceTree = "<group>"; };
+		CA358F75B713DEDA2D5A3376 /* Pods_ConvenienceTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConvenienceTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52BC646E901C19F54F2B42B /* Pods-ConvenienceTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenienceTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConvenienceTV/Pods-ConvenienceTV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A74BBA1D3EB910000CBD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C606BDAA4583C8CE89327A6 /* Pods_ConvenienceTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CCEC40785D85665A8F5F89B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC2A3E2B1C73A1944E5ADC /* Pods-ConvenienceTV.debug.xcconfig */,
+				D52BC646E901C19F54F2B42B /* Pods-ConvenienceTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45A74BB41D3EB910000CBD9D = {
+			isa = PBXGroup;
+			children = (
+				45A74BBF1D3EB910000CBD9D /* ConvenienceTV */,
+				45A74BBE1D3EB910000CBD9D /* Products */,
+				2CCEC40785D85665A8F5F89B /* Pods */,
+				B7039A7350069903A61C74D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45A74BBE1D3EB910000CBD9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A74BBD1D3EB910000CBD9D /* ConvenienceTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45A74BBF1D3EB910000CBD9D /* ConvenienceTV */ = {
+			isa = PBXGroup;
+			children = (
+				45A74BC01D3EB910000CBD9D /* AppDelegate.swift */,
+				45A74BC21D3EB910000CBD9D /* ViewController.swift */,
+				45A74BC41D3EB910000CBD9D /* Main.storyboard */,
+				45A74BC71D3EB910000CBD9D /* Assets.xcassets */,
+				45A74BC91D3EB910000CBD9D /* Info.plist */,
+			);
+			path = ConvenienceTV;
+			sourceTree = "<group>";
+		};
+		B7039A7350069903A61C74D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA358F75B713DEDA2D5A3376 /* Pods_ConvenienceTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45A74BBC1D3EB910000CBD9D /* ConvenienceTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A74BCC1D3EB910000CBD9D /* Build configuration list for PBXNativeTarget "ConvenienceTV" */;
+			buildPhases = (
+				C285BF4843D69EB8EFF45580 /* [CP] Check Pods Manifest.lock */,
+				45A74BB91D3EB910000CBD9D /* Sources */,
+				45A74BBA1D3EB910000CBD9D /* Frameworks */,
+				45A74BBB1D3EB910000CBD9D /* Resources */,
+				A443845104868819BEEC364A /* [CP] Embed Pods Frameworks */,
+				46DF4C73C166B141818FA754 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConvenienceTV;
+			productName = ConvenienceTV;
+			productReference = 45A74BBD1D3EB910000CBD9D /* ConvenienceTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45A74BB51D3EB910000CBD9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = URBN;
+				TargetAttributes = {
+					45A74BBC1D3EB910000CBD9D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 45A74BB81D3EB910000CBD9D /* Build configuration list for PBXProject "ConvenienceTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45A74BB41D3EB910000CBD9D;
+			productRefGroup = 45A74BBE1D3EB910000CBD9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45A74BBC1D3EB910000CBD9D /* ConvenienceTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45A74BBB1D3EB910000CBD9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A74BC81D3EB910000CBD9D /* Assets.xcassets in Resources */,
+				45A74BC61D3EB910000CBD9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46DF4C73C166B141818FA754 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConvenienceTV/Pods-ConvenienceTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A443845104868819BEEC364A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConvenienceTV/Pods-ConvenienceTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C285BF4843D69EB8EFF45580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A74BB91D3EB910000CBD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A74BC31D3EB910000CBD9D /* ViewController.swift in Sources */,
+				45A74BC11D3EB910000CBD9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45A74BC41D3EB910000CBD9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A74BC51D3EB910000CBD9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45A74BCA1D3EB910000CBD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		45A74BCB1D3EB910000CBD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45A74BCD1D3EB910000CBD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEC2A3E2B1C73A1944E5ADC /* Pods-ConvenienceTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ConvenienceTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urbn.ConvenienceTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45A74BCE1D3EB910000CBD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52BC646E901C19F54F2B42B /* Pods-ConvenienceTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ConvenienceTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.urbn.ConvenienceTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45A74BB81D3EB910000CBD9D /* Build configuration list for PBXProject "ConvenienceTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A74BCA1D3EB910000CBD9D /* Debug */,
+				45A74BCB1D3EB910000CBD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45A74BCC1D3EB910000CBD9D /* Build configuration list for PBXNativeTarget "ConvenienceTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A74BCD1D3EB910000CBD9D /* Debug */,
+				45A74BCE1D3EB910000CBD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45A74BB51D3EB910000CBD9D /* Project object */;
+}
