@@ -8,10 +8,10 @@
 
 import Foundation
 
-public func activateVFL(format format: String, options: NSLayoutFormatOptions = [], metrics: [String : AnyObject]? = nil, views: [String : AnyObject]) {
-    NSLayoutConstraint.activateConstraints(
-        NSLayoutConstraint.constraintsWithVisualFormat(
-            format,
+public func activateVFL(format: String, options: NSLayoutFormatOptions = [], metrics: [String : AnyObject]? = nil, views: [String : AnyObject]) {
+    NSLayoutConstraint.activate(
+        NSLayoutConstraint.constraints(
+            withVisualFormat: format,
             options: options,
             metrics: metrics,
             views: views
@@ -20,7 +20,7 @@ public func activateVFL(format format: String, options: NSLayoutFormatOptions = 
 }
 
 public extension UIView {
-    public func addSubviewWithNoConstraints(subview: UIView) {
+    public func addSubviewWithNoConstraints(_ subview: UIView) {
         subview.translatesAutoresizingMaskIntoConstraints = false
         addSubview(subview)
     }
