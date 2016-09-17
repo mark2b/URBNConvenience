@@ -13,15 +13,15 @@ extension UITableView {
     public final func registerReusableCell<T where T: UITableViewCell>(cell: ReusableCell<T>) {
         switch cell {
         case .Class(let identifier):
-            registerClass(T.self, forCellReuseIdentifier: identifier)
+            register(T.self, forCellReuseIdentifier: identifier)
         case .Nib(let identifier, let nibName, let bundle):
             let nib = UINib(nibName: nibName, bundle: bundle)
-            registerNib(nib, forCellReuseIdentifier: identifier)
+            register(nib, forCellReuseIdentifier: identifier)
         }
     }
     
     public final func dequeueReusableCell<T where T: UITableViewCell>(cell: ReusableCell<T>, indexPath: NSIndexPath) -> T {
-        guard let cell = dequeueReusableCellWithIdentifier(cell.identifier, forIndexPath: indexPath) as? T else {
+        guard let cell = dequeueReusableCell(withIdentifier: cell.identifier, for: indexPath as IndexPath) as? T else {
             assertionFailure("type error how is this possible?")
             return T()
         }
@@ -31,7 +31,7 @@ extension UITableView {
 
 public enum ReusableCell<Cell> {
     case Class(identifier: String)
-    case Nib(identifier: String, nibName: String, bundle: NSBundle?)
+    case Nib(identifier: String, nibName: String, bundle: Bundle?)
     
     public var identifier: String {
         switch self {
@@ -46,7 +46,7 @@ public enum ReusableCell<Cell> {
         self = .Class(identifier: identifier)
     }
     
-    public init(identifier: String, nibName: String, bundle: NSBundle? = nil) {
+    public init(identifier: String, nibName: String, bundle: Bundle? = nil) {
         self = .Nib(identifier: identifier, nibName: nibName, bundle: bundle)
     }
 }

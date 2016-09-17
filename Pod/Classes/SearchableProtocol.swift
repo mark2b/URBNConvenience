@@ -10,7 +10,7 @@ import Foundation
 import CoreSpotlight
 import MobileCoreServices
 
-public struct UserActivityEligibility : OptionSetType {
+public struct UserActivityEligibility : OptionSet {
     public init(rawValue:Int) { self.rawValue = rawValue}
     public let rawValue : Int
     public static let Search = UserActivityEligibility(rawValue: 1 << 1)
@@ -35,13 +35,13 @@ public protocol Searchable {
 public extension Searchable {
     public func configureActivity(searchActivity: NSUserActivity, infoProvider: SearchInfoProvider) -> NSUserActivity {
         searchActivity.title = infoProvider.searchTitle()
-        searchActivity.webpageURL = NSURL(string: infoProvider.searchURL())
+        searchActivity.webpageURL = NSURL(string: infoProvider.searchURL()) as URL?
         searchActivity.keywords = infoProvider.keywords()
-        searchActivity.contentAttributeSet = searchableAttributeSet(infoProvider)
+        searchActivity.contentAttributeSet = searchableAttributeSet(infoProvider: infoProvider)
         
-        searchActivity.eligibleForSearch = infoProvider.userActivityEligibility.contains(.Search)
-        searchActivity.eligibleForHandoff = infoProvider.userActivityEligibility.contains(.Handoff)
-        searchActivity.eligibleForPublicIndexing = infoProvider.userActivityEligibility.contains(.PublicIndexing)
+        searchActivity.isEligibleForSearch = infoProvider.userActivityEligibility.contains(.Search)
+        searchActivity.isEligibleForHandoff = infoProvider.userActivityEligibility.contains(.Handoff)
+        searchActivity.isEligibleForPublicIndexing = infoProvider.userActivityEligibility.contains(.PublicIndexing)
         
         return searchActivity
     }
